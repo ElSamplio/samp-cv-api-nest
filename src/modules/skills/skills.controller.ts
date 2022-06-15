@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
-import { BasicResponseDto } from 'src/dtos/BasicResponseDto';
+import { ApiCreatedResponse } from '@nestjs/swagger';
 import { FindResponseDto } from 'src/dtos/FindResponseDto';
 import { CreateSkillDto } from 'src/dtos/skills/CreateSkillDto';
 import { SkillCreatedResponseDto } from 'src/dtos/skills/SkillCreatedResponseDto';
@@ -20,6 +20,9 @@ export class SkillsController {
   }
 
   @Post()
+  @ApiCreatedResponse({
+    description: 'Skill saved',
+  })
   async create(
     @Body() createSkillDto: CreateSkillDto,
   ): Promise<SkillCreatedResponseDto> {
