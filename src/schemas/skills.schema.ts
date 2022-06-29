@@ -9,7 +9,10 @@ export class Skills {
   name: string;
 
   @Prop()
-  description: string;
+  yearsOfExperience: number;
+
+  @Prop()
+  skillLevel: number;
 
   @Prop()
   icon: string;

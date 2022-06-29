@@ -8,9 +8,13 @@ export class CreateSkillDto {
 
   @IsNotEmpty()
   @ApiProperty()
-  description: string;
+  yearsOfExperience: number;
 
   @IsNotEmpty()
   @ApiProperty({ example: 'pi pi-star' })
   icon: string;
+
+  @IsNotEmpty()
+  @ApiProperty({ example: 'pi pi-star' })
+  skillLevel: number;
 }
