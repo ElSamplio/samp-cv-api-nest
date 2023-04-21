@@ -11,6 +11,6 @@ export class ProjectService {
   ) {}
 
   async findAll(): Promise<Project[]> {
-    return await this.projectModel.find({}).sort({ startDate: -1 }).exec();
+    return await this.projectModel.find().sort({ startDate: -1 }).exec();
   }
 }
