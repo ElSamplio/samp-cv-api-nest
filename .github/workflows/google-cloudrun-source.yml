@@ -2,7 +2,7 @@
 #
 # Overview:
 #
-# 1. Authenticate to Google Cloud
+# 1. Authenticate to Google Clouds
 # 2. Deploy it to Cloud Run
 #
 # To configure this workflow:
