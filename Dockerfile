@@ -4,7 +4,7 @@
 
 FROM node:18-alpine As development
 
-ENV DB_CONNECTION_STRING "mongodb+srv://sampcv:h0OFUZKlTF0giKxA@cluster0.jpcmkgd.mongodb.net/samp_cv?retryWrites=true&w=majority"
+ENV DB_CONNECTION_STRING process.env.DB_CONNECTION_STRING
 
 # Create app directory
 WORKDIR /usr/src/app
